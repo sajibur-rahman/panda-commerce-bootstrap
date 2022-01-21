@@ -11,8 +11,8 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <header> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="./images/logo.png" alt="brand-logo" />
@@ -27,13 +27,13 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item ms-4">
-              <a class="nav-link" href="#">Shows</a>
+              <a class="nav-link" href="#shoes">Shoes</a>
             </li>
             <li class="nav-item ms-4">
-              <a class="nav-link" href="#">Backpack</a>
+              <a class="nav-link" href="#backpack">Backpack</a>
             </li>
             <li class="nav-item ms-4">
-              <a class="nav-link" href="#">Subscribe</a>
+              <a class="nav-link" href="#subscribe">Subscribe</a>
             </li>
           </ul>
         </div>
@@ -41,7 +41,7 @@
     </nav>
 
     <!-- images slider  -->
-    <section class="container my-5">
+    <section class="container py-5">
       <div id="carouselExampleControls" class="carousel slide bg-info p-4  rounded-3" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item  active">
@@ -144,7 +144,8 @@
 
     <!-- shoes container section   -->
 
-    <section class="container py-5">
+    <section class="container py-5" id="shoes">
+      <h2 class="mb-4">Shoes</h2>
       <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
         <div class="col">
           <div class="card border-0 shadow h-100">
@@ -188,7 +189,8 @@
 
 
     <!-- Backpack container  -->
-    <section class="container py-5">
+    <section class="container py-5" id="backpack">
+      <h2 class="mb-4">Backpack</h2>
       <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
         <div class="col">
           <div class="card shadow border-0  h-100">
@@ -200,7 +202,7 @@
               </h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
-            <div class="card-footer border-top-0">
+            <div class="m-4 border-top-0">
               <button class="btn btn-primary">Buy Now</button>
             </div>
           </div>
@@ -214,7 +216,7 @@
               </h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
-            <div class="card-footer border-top-0">
+            <div class="m-4 border-top-0">
               <button class="btn btn-primary">Buy Now</button>
             </div>
           </div>
@@ -227,27 +229,32 @@
               </h5>
               <h5 class="card-title">$ 420
               </h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. </p>
             </div>
-            <div class="card-footer border-top-0">
+            <div class="m-4 border-top-0">
               <button class="btn btn-primary">Buy Now</button>
             </div>
           </div>
         </div>
       </div>
     </section>
-  </main>
-  <footer>
-    <section class="container py-5">
-      <div class="d-flex justify-content-center align-items-center bg-info rounded py-5">
+
+    <!-- Subscribe section  -->
+
+    <section class="container my-5" id="subscribe">
+
+      <div class="d-flex justify-content-center align-items-center bg-info rounded-3 py-5">
         <div>
           <h2>LET'S STAY IN TOUCH</h2>
           <p>Get updates on sales, specials and more</p>
-          <input type="text"> <br><br>
+          <input type="text" class="border-0"> <br><br>
           <button class="btn btn-primary">SUBMIT</button>
         </div>
       </div>
+
     </section>
+  </main>
+  <footer>
     <section class="container pt-5 text-center">
       <p class=" text-secondary">&copy; 2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</p>
     </section>
